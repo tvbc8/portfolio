@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez Yanis LIU pour toute demande ou collaboration.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Contact - Yanis LIU</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f3ee;
+            display: flex;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            width: 20%;
+            background-color: #d4492f;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .sidebar nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .sidebar nav ul li {
+            width: 100%;
+            text-align: center;
+        }
+
+        .sidebar nav ul li a {
+            display: block;
+            width: 100%;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 0;
+            border-radius: 5px;
+            transition: color 0.3s ease, background-color 0.3s ease;
+        }
+
+        .sidebar nav ul li a.active {
+            background-color: white;
+            color: #d4492f;
+        }
+
+        .sidebar nav ul li a:hover {
+            background-color: #ffddc1;
+            color: #d4492f;
+        }
+
+        /* Main Content Styles */
+        .content {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+        }
+
+        .contact-section {
+            max-width: 800px;
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .contact-item {
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1, h2 {
+            color: #d4492f;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                padding: 10px 0;
+            }
+
+            .content {
+                width: 100%;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <nav aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html">ACCUEIL</a></li>
+                    <li><a href="competences.html">COMPÉTENCES</a></li>
+                    <li><a href="education.html">ÉDUCATION</a></li>
+                    <li><a href="projet.html">PROJET</a></li>
+                    <li><a href="contact.html" class="active">CONTACT</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <section class="contact-section">
+                <h1>Me Contacter</h1>
+                <p>N'hésitez pas à me contacter pour toute question ou collaboration :</p>
+
+                <div class="contact-item">
+                    <p><strong>Email :</strong> yanisliu12@gmail.com</p>
+                </div>
+
+                <div class="contact-item">
+                    <p><strong>Téléphone :</strong> +33 06 04 08 43 37</p>
+                </div>
+
+                <div class="contact-item">
+                    <p><strong>Adresse :</strong> 339 Rue du Jardin Public, 33300 Bordeaux, France</p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

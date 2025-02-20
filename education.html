@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Parcours éducatif de Yanis LIU, de Saint Gabriel à l'ECE Bordeaux.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Éducation - Yanis LIU</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f3ee;
+            display: flex;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            width: 20%;
+            background-color: #d4492f;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .sidebar nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .sidebar nav ul li {
+            width: 100%;
+            text-align: center;
+        }
+
+        .sidebar nav ul li a {
+            display: block;
+            width: 100%;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 0;
+            border-radius: 5px;
+            transition: color 0.3s ease, background-color 0.3s ease;
+        }
+
+        .sidebar nav ul li a.active {
+            background-color: white;
+            color: #d4492f;
+        }
+
+        .sidebar nav ul li a:hover {
+            background-color: #ffddc1;
+            color: #d4492f;
+        }
+
+        /* Main Content Styles */
+        .content {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+        }
+
+        .education-section {
+            max-width: 800px;
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .education-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .education-item img {
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+        }
+
+        h1, h2 {
+            color: #d4492f;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                padding: 10px 0;
+            }
+
+            .content {
+                width: 100%;
+                padding: 10px;
+            }
+
+            .education-item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .education-item img {
+                margin: 0 0 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <nav aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html">ACCUEIL</a></li>
+                    <li><a href="competences.html">COMPÉTENCES</a></li>
+                    <li><a href="education.html" class="active">ÉDUCATION</a></li>
+                    <li><a href="projet.html">PROJET</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <section class="education-section">
+                <h1>Parcours Éducatif</h1>
+                <p>Découvrez mon parcours scolaire :</p>
+
+                <div class="education-item">
+                    <img src="image/stG.jpg" alt="Logo Saint Gabriel">
+                    <div>
+                        <h2>Lycée Saint Gabriel</h2>
+                        <p>2022 - 2024</p>
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <img src="image/ECE.jpg" alt="Logo ECE Bordeaux">
+                    <div>
+                        <h2>ECE Bordeaux</h2>
+                        <p>2024 - 2025</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
+
